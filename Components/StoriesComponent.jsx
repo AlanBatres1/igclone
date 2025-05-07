@@ -64,16 +64,6 @@ export default function StoriesComponent() {
      <Text style={styles.labelText}>Alan</Text>
     </View>
 
-    <View style={styles.container}>
-      {/* Gradient border */}
-     <LinearGradient style={styles.linearGradient} colors={["#feda75", "#fede1e", "#d62976", "#962fbf", "#4f5bd5"]}>
-      <View style={styles.imageWrapper}>
-        <Image style={styles.image} source={joinIcon}/>
-      </View>
-
-     </LinearGradient>
-     <Text style={styles.labelText}>Alan</Text>
-    </View>
   </ScrollView>
     
   )
