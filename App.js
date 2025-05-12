@@ -12,7 +12,11 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <HeaderComponent />
+      {/* Main scroll area */}
+      <View style={{flex: 1, paddingBottom: 70}}>
       <PostComponent />
+      </View>
+
       <FooterComponent />
       <StatusBar style='light'/>
     </SafeAreaView>

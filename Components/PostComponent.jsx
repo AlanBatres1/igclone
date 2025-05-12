@@ -86,8 +86,29 @@ export default function PostComponent() {
                 <Text style={{color: 'white', fontWeight: 'bold', paddingLeft: 14, paddingRight: 5}}>{post.userName}</Text>
                 <Text style={{color: 'white'}}>{post.description}</Text>
 
-
               </View>
+
+              {
+                post.comments.map((comment, idx) => {
+                  return(
+                    <View key={idx} style={{flex: 1, flexDirection: 'row' }}>
+                      <Text style={{color:'white', fontWeight: 'bold', paddingLeft: 14, paddingRight: 5, paddingTop:5}}>{comment.userWhoCommented}</Text>
+                      <Text style={{color:'white', fontWeight: 'bold', paddingTop: 5}} >{comment.userComment}</Text>
+                    </View>
+                  )
+                })
+              }
+              {/* Add comment section */}
+              <View style={{flex: 1, flexDirection: 'row' }}>
+                <Image source={post.profilePicture} style={{height:30, width:30, borderRadius: 50, marginLeft:14, marginTop: 10}}/>
+                <Text style={{color:'gainsboro', paddingLeft:13, paddingTop:8, alignSelf: 'center'}}>Add a comment...</Text>
+              </View>
+
+                {/* Date of post */}
+
+                <View>
+                  <Text style={{color: 'gainsboro', paddingLeft: 14, paddingTop: 6}}>12 Hours ago</Text>
+                </View>
     
             </View>
           )

@@ -21,10 +21,13 @@ const styles = StyleSheet.create({
   footerConatainer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    paddingBottom: 30,
-    marginTop: 15
-    
-
-
+    height: 70,
+    position: 'absolute',
+    bottom: 0,
+    zIndex: 10,
+    width: '100%',
+    alignItems: 'center',
+    borderTopWidth: 0.5,
+    borderTopColor: 'rgba(255, 255, 255, 0.2)'
   }
 })
